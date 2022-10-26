@@ -11,7 +11,13 @@ export default class TodoInputs extends Component {
         <form onSubmit={handleSubmit}>
           <div className="input-group">
             <div className="input-group-prepend">
-              <div className="input-group-text  bg-primary text-white ">
+              <div
+                className={
+                  editItem
+                    ? "input-group-text  bg-success text-white "
+                    : "input-group-text  bg-primary text-white "
+                }
+              >
                 {editItem ? (
                   <FaEdit className="book " />
                 ) : (
