@@ -1,0 +1,11 @@
+// Import all of Bootstrap's CSS
+// @import "~bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.book {
+  font-size: 1.45rem;
+}
