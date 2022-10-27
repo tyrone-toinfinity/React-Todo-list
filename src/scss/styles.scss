@@ -5,7 +5,74 @@
 * {
   margin: 0;
   padding: 0;
+  // Color Scheme
+  --main-color: #f08741;
+  --secondary-color: #ff714f;
+  --accent-color: #d96230;
+  font-family: "Inter", sans-serif;
 }
 .book {
   font-size: 1.45rem;
+}
+
+// Navbar
+nav {
+  display: flex;
+  margin: 0 4rem;
+  max-width: 1300px;
+  align-items: center;
+}
+.nav-bar {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0.2rem 0;
+  padding: 0.5rem;
+  font-size: 1.15rem;
+  letter-spacing: 0.09;
+  line-height: 31px;
+  color: rgb(87 87 87);
+  flex-grow: 1;
+  cursor: pointer;
+}
+.nav-bar2 {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.2rem 0;
+  padding: 0.5rem;
+  font-size: 1.15rem;
+  letter-spacing: 0.09;
+  line-height: 31px;
+  color: rgb(87 87 87);
+  cursor: pointer;
+  margin: 0 3rem 0 5rem;
+}
+
+.nav-bar > li {
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.nav-bar2 > li {
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.nav-bar > li:not(:first-child):hover {
+  background-color: #eee;
+}
+.nav-bar2 > li:not(:last-child):hover {
+  background-color: #eee;
+}
+
+.nav-bar2 > li:nth-last-child(1) {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin: 0 0 0 1rem;
+}
+.nav-bar2 > li:nth-last-child(1):hover {
+  filter: brightness(110%);
 }

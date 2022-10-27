@@ -1,6 +1,7 @@
 import React, { Component, useState, useEffect } from "react";
 import TodoInputs from "./components/TodoInputs";
 import TodoList from "./components/TodoList";
+import Navbar from "./components/Navbar";
 
 // Bootstrap
 import "./scss/styles.scss";
@@ -76,23 +77,27 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-10 mx-auto col-md-8 mt-4">
-            <h3 className="text-capitalize text-center">Task List</h3>
+      <div>
+        <Navbar />
 
-            <TodoInputs
-              item={this.state.item}
-              handleChange={this.handleChange}
-              handleSubmit={this.handleSubmit}
-              editItem={this.state.editItem}
-            />
-            <TodoList
-              items={this.state.items}
-              clearList={this.clearList}
-              handleDelete={this.handleDelete}
-              handleEdit={this.handleEdit}
-            />
+        <div className="container">
+          <div className="row">
+            <div className="col-10 mx-auto col-md-8 mt-4">
+              <h3 className="text-capitalize text-center">Task List</h3>
+
+              <TodoInputs
+                item={this.state.item}
+                handleChange={this.handleChange}
+                handleSubmit={this.handleSubmit}
+                editItem={this.state.editItem}
+              />
+              <TodoList
+                items={this.state.items}
+                clearList={this.clearList}
+                handleDelete={this.handleDelete}
+                handleEdit={this.handleEdit}
+              />
+            </div>
           </div>
         </div>
       </div>
