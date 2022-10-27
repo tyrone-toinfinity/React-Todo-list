@@ -76,3 +76,34 @@ nav {
 .nav-bar2 > li:nth-last-child(1):hover {
   filter: brightness(110%);
 }
+@media (max-width: 1020px) {
+  :root {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 860px) {
+  nav {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+  .nav-bar {
+    margin: 0;
+  }
+
+  .nav-bar2 {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .nav-bar {
+    margin: 0;
+    flex-direction: column;
+  }
+  .nav-bar > li {
+    display: none;
+  }
+  .nav-bar > li:first-child {
+    display: block;
+  }
+}
