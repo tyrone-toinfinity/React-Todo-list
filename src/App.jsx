@@ -57,8 +57,7 @@ class App extends Component {
     const filteredItems = this.state.items.filter((item) => {
       return item.id !== id;
     });
-    // !
-    localStorage.removeItem(items);
+
 
     this.setState({ items: filteredItems });
   };
